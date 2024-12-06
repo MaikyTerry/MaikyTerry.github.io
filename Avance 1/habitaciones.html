@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="descripcion" content="Bienvenido a mi hotel" />
+  <meta name="clave" content="hotel en peru" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Habitaciones</title>
+  <body>
+    <header>
+      <nav id="nave">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html"><img src="image/logo.png" alt="Prisma Logo" style="height: 40px;"></a>
+          </h1>
+          <ul>
+            <li><a href="hotel.html">INICIO</a></li>
+            <li><a href="About.html">ACERCA DE</a></li>
+            <li>
+              <a class="current" href="habitaciones.html">HABITACIONES</a>
+            </li>
+           
+            <li><a href="Reserv.html">RESERVA</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+              <!-- Icono de búsqueda -->
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+        <!-- Botón BOOK NOW -->
+        <li><a href="#" class="primary-btn" id="payNowBtn">PAGAR AHORA</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="rooms">
+      <div class="container top">
+        <div class="heading">
+          <h1>EXPLORAR</h1>
+          <h2>Nuestras Habitaciones</h2>
+          <p>
+            Las habitaciones de Prisma de Cusco combinan comodidad y estilo. Equipadas con Wi-Fi gratuito, televisión de pantalla plana y vistas impresionantes, nuestras acogedoras habitaciones son el refugio perfecto después de explorar la ciudad. Desde acogedoras habitaciones estándar hasta lujosas suites, cada espacio está diseñado para ofrecerte una experiencia inolvidable.
+
+
+          </p>
+        </div>
+
+        <div class="content mtop">
+          <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="item">
+              <div class="imagen">
+                <img src="image/room-1.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Habitación Estándar</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Un acogedor refugio con cómodas camas y vistas al hermoso paisaje cusqueño.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-2.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Habitación Deluxe</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Espacio elegante con un diseño contemporáneo, ideal para una escapada relajante.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-3.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Suite Junior</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Amplia y luminosa, perfecta para parejas que buscan un toque de lujo en su estancia.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-4.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Suite Familiar</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Habitación espaciosa con múltiples camas, diseñada para compartir momentos en familia.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-5.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Habitación Superior</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Equipamiento moderno y acabados de calidad que garantizan una estancia placentera.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-6.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Habitación con Balcón</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Relájate en tu balcón privado mientras disfrutas de las vistas panorámicas de la ciudad.
+
+
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-7.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Habitación Con Vista</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Disfruta de impresionantes amaneceres y atardeceres desde tu ventana.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="image/room-8.png" alt="" />
+              </div>
+              <div class="text">
+                <h2>Habitación Temática</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Diseñada con elementos culturales cusqueños, ofreciendo una experiencia auténtica y única.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $250
+                    <span>
+                      <br />
+                      Per Night
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class = 'fa fa-chevron-left'></i>",
+          "<i class = 'fa fa-chevron-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+            margin: 10,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+<section class="gallery">
+  <div class="container top">
+    <div class="heading">
+      <h1>FOTOS</h1>
+      <h2>Nuestra Galeria</h2>
+      <p>
+        La cálida bienvenida en nuestra recepción combina hospitalidad y diseño contemporáneo. Decorada con elementos locales, ofrece un ambiente acogedor desde el primer momento. Aquí comienza tu experiencia en Prisma de Cusco.    
+        
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content mtop">
+    
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div class="items">
+        
+        <div class="img">
+          <img src="image/gallery-1.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class ="fa fa-plus"></span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-2.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-3.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-4.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-5.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-6.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-4.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-3.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-1.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="image/gallery-6.png" alt="">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"> </span>
+          <h3>Titulo de la foto aqui.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
+      navText: [
+        "<i class = 'fa fa-chevron-left'></i>",
+        "<i class = 'fa fa-chevron-right'></i>",
+      ],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 4,
+          
+        },
+        1000: {
+          items: 6,
+        },
+      },
+    });
+  </script> 
+
+
+
+
+
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="menu-footer">
+          <div class="contact-info">
+            <p class="title-footer">Información de Contacto</p>
+            <ul>
+              <li>Dirección: Av. Matara N° 394 Cusco, Peru, CT 06066</li>
+              <li>Teléfono: 123-456-7890</li>
+              <li>Fax: 55555300</li>
+              <li>EmaiL: reservas@hotelariaPRI.com</li>
+            </ul>
+            <div class="social-icons">
+              <span class="facebook">
+                <a href="https://web.facebook.com/hotelprismacusco/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </span>
+              <span class="twitter">
+                <a
+                  href="https://x.com/Sonesta_Cusco/status/1420035043473465349?mx=2"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </span>
+              <span class="youtube">
+                <a href="https://www.youtube.com/watch?v=YqVKv2W1wk8">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </span>
+              <span class="pinterest">
+                <a href="https://mx.pinterest.com/cobmoller/prisma-hotel/">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </span>
+              <span class="instagram">
+                <a href="https://www.instagram.com/prismacusco/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="information">
+            <p class="title-footer">Información</p>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Información De Hotel</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contactános</a></li>
+            </ul>
+          </div>
+
+          <div class="my-account">
+            <p class="title-footer">Mi cuenta</p>
+
+            <ul>
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Historial de Reservas</a></li>
+              <li><a href="#">Lista de Reservas</a></li>
+              <li><a href="#">Promociones</a></li>
+              <li><a href="#">Reembolsos</a></li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <p class="title-footer">Suscripción de promociones</p>
+            <div class="content">
+              <p>
+                Suscríbete a nuestras promociones ahora y mantente al día con ofertas exclusivas.
+              </p>
+              <input type="email" id="emailInput" placeholder="Ingresa el correo aquí..." />
+              <button id="subscribeButton">Suscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Desarrollado por Aldo&Maiky &copy; 2024</p>
+
+          <img src="image/payment.png" alt="Pagos" />
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Seleccionar elementos
+      const subscribeButton = document.getElementById("subscribeButton");
+      const emailInput = document.getElementById("emailInput");
+    
+      // Evento al hacer clic en Suscríbete
+      subscribeButton.addEventListener("click", function () {
+        // Validar si se ingresó un correo
+        if (emailInput.value.trim() === "") {
+          alert("Por favor, ingrese un correo electrónico válido.");
+          return;
+        }
+    
+        // Mostrar el mensaje de confirmación
+        alert("¡Usted se suscribió exitosamente!");
+    
+        // Limpiar el campo de correo
+        emailInput.value = "";
+      });
+    </script>  
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById('payNowBtn').addEventListener('click', function(event) {
+          event.preventDefault(); // Evita que el enlace siga su comportamiento predeterminado
+          alert('Redirigiendo a la página de pago...');
+          window.location.href = 'Pago.html'; // Redirige a la página de pago
+      });
+    </script>
+  </body>
+</html>

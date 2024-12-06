@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Bienvenido a mi hotel" />
+    <meta name="clave" content="hotel en peru" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hotel & Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nave">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html"><img src="image/logo.png" alt="Prisma Logo" style="height: 40px;"></a>
+          </h1>
+          <ul>
+            <li><a href="hotel.html">INICIO</a></li>
+            <li><a href="About.html">ACERCA DE</a></li>
+            <li><a href="habitaciones.html">HABITACIONES</a></li>
+          
+            <li><a href="Reserv.html">RESERVA</a></li>
+            <li><a class="current" href="Contact.html">CONTACTO</a></li>
+         <!-- Icono de búsqueda -->
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+        <!-- Botón BOOK NOW -->
+        <li><a href="#" class="primary-btn" id="payNowBtn">PAGAR AHORA</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contacto Inicio -->
+<div class="container-xxl py-5">
+  <div class="container">
+      <!-- Título centrado -->
+      <div class="text-center contact-title">
+          <h6 class="section-title text-primary text-uppercase">Contáctenos</h6>
+          <h1 class="mb-5"><span class="text-primary text-uppercase">Contáctenos</span> para cualquier consulta</h1>
+      </div>
+
+      <!-- Información de Contacto en una fila horizontal -->
+<div class="row text-center mb-5">
+    <div class="col-md-4 contact-item">
+        <h6 class="text-primary text-uppercase">Reserva</h6>
+        <p><i class="fa fa-envelope-open text-primary me-2"></i>libro@hotelprisma.com</p>
+    </div>
+    <div class="col-md-4 contact-item">
+        <h6 class="text-primary text-uppercase">General</h6>
+        <p><i class="fa fa-envelope-open text-primary me-2"></i>info@hotelprisma.com</p>
+    </div>
+    <div class="col-md-4 contact-item">
+        <h6 class="text-primary text-uppercase">Técnico</h6>
+        <p><i class="fa fa-envelope-open text-primary me-2"></i>tecnologia@hotelprisma.com</p>
+    </div>
+</div>
+      <div class="row g-4 contact-container">
+          <!-- Formulario -->
+          <!-- Formulario actualizado sin etiquetas -->
+<div class="col-md-6 contact-form">
+  <form id="contactForm">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="name" placeholder="Su nombre">
+        </div>
+        <div class="col-md-6">
+            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+        </div>
+        <div class="col-12">
+            <input type="text" class="form-control" id="subject" placeholder="Sujeto">
+        </div>
+        <div class="col-12">
+            <textarea class="form-control" placeholder="Escriba su mensaje" id="message" style="height: 150px"></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary w-100 py-3" type="submit">Enviar mensaje</button>
+        </div>
+    </div>
+</form>
+</div>
+
+
+          <!-- Mapa -->
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.2222435046333!2d-71.98090732575751!3d-13.521948371117418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6757452a689%3A0xfcb1dad8fccf1427!2sPrisma%20Hotel!5e0!3m2!1ses-419!2spe!4v1729346815420!5m2!1ses-419!2spe" frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Contacto Fin -->
+    <section id="contact-info" class="bg-dark">
+      <div class="container">
+        <div class="box">
+          <i class="fa-solid fa-hotel fa-3x"></i>
+          <h3>Ubicacion</h3>
+          <p>Dirección: Av.  Matara N° 394 Cusco, Peru, CT 06066</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-phone fa-3x"></i>
+          <h3>Numero de Telefono</h3>
+          <p>Teléfono: 123-456-7890</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-envelope fa-3x"></i>
+          <h3>Email Address</Address></h3>
+          <p>reservas@hotelariaPRI.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="menu-footer">
+          <div class="contact-info">
+            <p class="title-footer">Información de Contacto </p>
+            <ul>
+              <li>Dirección: Av.  Matara N° 394 Cusco, Peru, CT 06066</li>
+              <li>Teléfono: 123-456-7890</li>
+              <li>Fax: 55555300</li>
+              <li>EmaiL: reservas@hotelariaPRI.com</li>   
+            </ul>
+            <div class="social-icons">  
+              <span class="facebook">               
+                <a href="https://web.facebook.com/hotelprismacusco/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </span>
+              <span class="twitter">               
+                <a href="https://x.com/Sonesta_Cusco/status/1420035043473465349?mx=2">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </span>
+              <span class="youtube">               
+                <a href="https://www.youtube.com/watch?v=YqVKv2W1wk8">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </span>
+              <span class="pinterest">               
+                <a href="https://mx.pinterest.com/cobmoller/prisma-hotel/">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </span>
+              <span class="instagram">               
+                <a href="https://www.instagram.com/prismacusco/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+    
+          <div class="information">
+            <p class="title-footer">Información</p>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Información De Hotel</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contactános</a></li>
+            </ul>
+          </div>
+    
+          <div class="my-account">
+            <p class="title-footer">Mi cuenta</p>
+    
+            <ul>
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Historial de Reservas</a></li>
+              <li><a href="#">Lista de Reservas</a></li>
+              <li><a href="#">Promociones</a></li>
+              <li><a href="#">Reembolsos</a></li>
+            </ul>
+          </div>
+    
+          <div class="newsletter">
+            <p class="title-footer">Suscripción de promociones</p>
+            <div class="content">
+              <p>
+                Suscríbete a nuestras promociones ahora y mantente al día con ofertas exclusivas.
+              </p>
+              <input type="email" id="emailInput" placeholder="Ingresa el correo aquí..." />
+              <button id="subscribeButton">Suscríbete</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="copyright">
+          <p>Desarrollado por Aldo&Maiky &copy; 2024</p>
+    
+          <img src="image/payment.png" alt="Pagos" />
+        </div>
+      </div>
+    </footer> 
+    
+    <script>
+      // Seleccionar el formulario
+      const contactForm = document.getElementById("contactForm");
+    
+      // Añadir un evento 'submit' al formulario
+      contactForm.addEventListener("submit", function(event) {
+          // Evitar que se recargue la página
+          event.preventDefault();
+    
+          // Mostrar mensaje de confirmación
+          alert("¡Mensaje enviado correctamente! Le responderemos lo más breve posible.");
+    
+          // Limpiar los campos del formulario
+          contactForm.reset();
+      });
+    </script>
+<script>
+  // Seleccionar elementos
+  const subscribeButton = document.getElementById("subscribeButton");
+  const emailInput = document.getElementById("emailInput");
+
+  // Evento al hacer clic en Suscríbete
+  subscribeButton.addEventListener("click", function () {
+    // Validar si se ingresó un correo
+    if (emailInput.value.trim() === "") {
+      alert("Por favor, ingrese un correo electrónico válido.");
+      return;
+    }
+
+    // Mostrar el mensaje de confirmación
+    alert("¡Usted se suscribió exitosamente!");
+
+    // Limpiar el campo de correo
+    emailInput.value = "";
+  });
+</script>     
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById('payNowBtn').addEventListener('click', function(event) {
+          event.preventDefault(); // Evita que el enlace siga su comportamiento predeterminado
+          alert('Redirigiendo a la página de pago...');
+          window.location.href = 'Pago.html'; // Redirige a la página de pago
+      });
+    </script>
+  </body>
+</html>

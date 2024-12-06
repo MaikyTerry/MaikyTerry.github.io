@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Bienvenido a mi hotel" />
+    <meta name="clave" content="hotel en peru" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hotel & Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nave">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html"
+              ><img src="image/logo.png" alt="Prisma Logo" style="height: 40px"
+            /></a>
+          </h1>
+          <ul>
+            <li><a href="hotel.html">INICIO</a></li>
+            <li><a href="About.html">ACERCA DE</a></li>
+            <li><a href="habitaciones.html">HABITACIONES</a></li>
+
+            <li><a class="current" href="Reserv.html">RESERVA</a></li>
+            <li><a href="Contact.html">CONTACTO</a></li>
+            <!-- Icono de búsqueda -->
+            <li>
+              <a href="#"><i class="fa fa-search"></i></a>
+            </li>
+            <!-- Botón BOOK NOW -->
+            <li>
+              <a href="#" class="primary-btn" id="payNowBtn">PAGAR AHORA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="overlay">
+        <h2 class="last-minute">Ultima Oportunidad!</h2>
+        <h1 class="headline">para una experencia increible Te animas?</h1>
+        <div class="countdown">
+          <div class="time-box">
+            <h3>00</h3>
+            <span>Dias</span>
+          </div>
+          <div class="time-box">
+            <h3>00</h3>
+            <span>Horas</span>
+          </div>
+          <div class="time-box">
+            <h3>00</h3>
+            <span>Minutos</span>
+          </div>
+          <div class="time-box">
+            <h3>00</h3>
+            <span>Segundos</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="book">
+        <div class="container flex_space">
+          <div class="text">
+            <h1><span>Reserva </span> Tus Habitaciones</h1>
+          </div>
+          <div class="form">
+            <form class="grid">
+              <input type="date" placeholder="Araival Date" />
+              <input type="date" placeholder="Departure Date" />
+              <input type="number" placeholder="Adults" />
+              <input type="number" placeholder="Childern" />
+              <input type="submit" value="CHECK AVAILABILITY" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="menu-footer">
+          <div class="contact-info">
+            <p class="title-footer">Información de Contacto</p>
+            <ul>
+              <li>Dirección: Av. Matara N° 394 Cusco, Peru, CT 06066</li>
+              <li>Teléfono: 123-456-7890</li>
+              <li>Fax: 55555300</li>
+              <li>EmaiL: reservas@hotelariaPRI.com</li>
+            </ul>
+            <div class="social-icons">
+              <span class="facebook">
+                <a href="https://web.facebook.com/hotelprismacusco/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </span>
+              <span class="twitter">
+                <a
+                  href="https://x.com/Sonesta_Cusco/status/1420035043473465349?mx=2"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </span>
+              <span class="youtube">
+                <a href="https://www.youtube.com/watch?v=YqVKv2W1wk8">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </span>
+              <span class="pinterest">
+                <a href="https://mx.pinterest.com/cobmoller/prisma-hotel/">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </span>
+              <span class="instagram">
+                <a href="https://www.instagram.com/prismacusco/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="information">
+            <p class="title-footer">Información</p>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Información De Hotel</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contactános</a></li>
+            </ul>
+          </div>
+
+          <div class="my-account">
+            <p class="title-footer">Mi cuenta</p>
+
+            <ul>
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Historial de Reservas</a></li>
+              <li><a href="#">Lista de Reservas</a></li>
+              <li><a href="#">Promociones</a></li>
+              <li><a href="#">Reembolsos</a></li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <p class="title-footer">Suscripción de promociones</p>
+            <div class="content">
+              <p>
+                Suscríbete a nuestras promociones ahora y mantente al día con
+                ofertas exclusivas.
+              </p>
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Ingresa el correo aquí..."
+              />
+              <button id="subscribeButton">Suscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Desarrollado por Aldo&Maiky &copy; 2024</p>
+
+          <img src="image/payment.png" alt="Pagos" />
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Seleccionar el formulario
+      const bookingForm = document.querySelector(".form form");
+
+      // Añadir un evento al formulario
+      bookingForm.addEventListener("submit", function (event) {
+        // Evitar que se recargue la página
+        event.preventDefault();
+
+        // Mostrar mensaje de confirmación
+        alert(
+          "¡Habitación reservada! Ahora serás redirigido a la opción de pago."
+        );
+
+        // Reiniciar los campos del formulario
+        bookingForm.reset();
+
+        // Redirigir al usuario a la página de pago
+        // Cambia "pago.html" por el enlace correcto
+      });
+    </script>
+
+    <script>
+      // Configura la fecha límite (fecha objetivo)
+      const deadline = new Date("2024-12-31T23:59:59").getTime();
+
+      // Función para actualizar el contador
+      function updateCountdown() {
+        const now = new Date().getTime(); // Fecha actual
+        const timeLeft = deadline - now; // Tiempo restante en milisegundos
+
+        if (timeLeft >= 0) {
+          // Cálculos para días, horas, minutos y segundos
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+          // Actualiza los valores en el DOM
+          document.querySelectorAll(".time-box h3")[0].textContent = days;
+          document.querySelectorAll(".time-box h3")[1].textContent = hours;
+          document.querySelectorAll(".time-box h3")[2].textContent = minutes;
+          document.querySelectorAll(".time-box h3")[3].textContent = seconds;
+        } else {
+          // Si el tiempo ha expirado
+          clearInterval(interval);
+          document.querySelector(".countdown").innerHTML =
+            "<h3>¡Oferta Expirada!</h3>";
+        }
+      }
+
+      // Ejecuta la función cada segundo
+      const interval = setInterval(updateCountdown, 1000);
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Seleccionar elementos
+      const subscribeButton = document.getElementById("subscribeButton");
+      const emailInput = document.getElementById("emailInput");
+
+      // Evento al hacer clic en Suscríbete
+      subscribeButton.addEventListener("click", function () {
+        // Validar si se ingresó un correo
+        if (emailInput.value.trim() === "") {
+          alert("Por favor, ingrese un correo electrónico válido.");
+          return;
+        }
+
+        // Mostrar el mensaje de confirmación
+        alert("¡Usted se suscribió exitosamente!");
+
+        // Limpiar el campo de correo
+        emailInput.value = "";
+      });
+    </script>
+    <script>
+      document
+        .getElementById("payNowBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Evita que el enlace siga su comportamiento predeterminado
+          alert("Redirigiendo a la página de pago...");
+          window.location.href = "Pago.html"; // Redirige a la página de pago
+        });
+    </script>
+  </body>
+</html>

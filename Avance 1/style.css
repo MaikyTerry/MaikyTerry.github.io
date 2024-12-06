@@ -1,0 +1,1190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------home---------*/
+.home {
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .home img {
+    width: 100%;
+    height: 100vh;
+  }
+ 
+  .home .text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
+
+  
+  .home .text h1 {
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+  }
+  .home .text p {
+    font-size: 20px;
+    
+  }
+  
+  
+  .home p {
+    margin: 20px 0;
+  }
+  
+  .home button {
+    margin-right: 20px;
+    
+  }
+  
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background: rgba(197, 199, 177, 0.5)!important;
+    color: #fff;
+  }
+  
+  .owl-nav .owl-prev {
+    left: 0;
+  }
+  
+  .owl-nav .owl-next {
+    right: 0;
+  }
+  
+  /*--------home---------*/
+
+@media (max-width: 768px) {
+    /* Ajustar el contenedor */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Cambiar el diseño del showcase */
+    #showcase {
+        height: 400px; /* Reduce la altura para pantallas pequeñas */
+    }
+
+    #showcase .showcase-content h1 {
+        font-size: 40px;
+    }
+
+    #showcase .showcase-content p {
+        font-size: 16px;
+    }
+
+    /* Ajustar la disposición de las características (boxes) */
+    .box {
+        width: 100%; /* Hacer que las cajas ocupen todo el ancho en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    /* Ajustar las imágenes de info para que no floten */
+    #Home-info .info-img,
+    #Home-info .info-content {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar la barra de navegación */
+    #nave ul {
+        display: block;
+        text-align: center;
+    }
+
+    #nave ul li {
+        float: none;
+    }
+
+    /* Ajustar el formulario de contacto */
+    #contact-form input, 
+    #contact-form textarea {
+        width: 100%;
+    }
+}
+
+
+
+/*estilo principal*/
+html,body {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.1cm;
+}
+
+a {
+    color: #ad602c;
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+     padding-bottom: 20px;
+
+}
+
+p { margin: 10px 0;
+
+}
+/* utilidad clase     */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: #f7c08a;
+}
+
+.lead {
+    font-size: 20px ;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color:#fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: #f7c08a;
+    color: #333;
+}
+ 
+.clr{
+    clear:both;
+}
+.l-heading {
+    font-size: 40px;
+}
+
+/*relleno*/
+.py-1 { padding: 10px 0;}
+.py-2 { padding: 20px 0;}
+.py-3 { padding: 30px 0;}
+
+/*barra de navegacion*/
+/* Barra de navegación */
+#nave {
+    background: rgba(51, 51, 51, 0.8); /* Fondo gris oscuro con transparencia */
+    color: #fff;
+    overflow: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    padding: 0px ; /* Ajuste de padding para mejor presentación */
+}
+
+#nave a {
+    color: #fff; /* Mantiene el texto de los enlaces en blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+#nave h1 {
+    float: left;
+    padding-top: 10px;
+}
+
+#nave ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#nave ul li {
+    float: left;
+}
+
+#nave ul li a {
+    display: block;
+    padding: 15px 20px; /* Espaciado más uniforme */
+    text-align: center;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease; /* Transiciones suaves en el hover */
+}
+
+#nave ul li a:hover,
+#nave ul li a.current {
+    background: rgba(138, 247, 214, 0.3); /* Fondo ligeramente anaranjado en hover con transparencia */
+    color: #f7c08a; /* Color del texto más claro en hover */
+    border-radius: 4px; /* Bordes redondeados para un efecto moderno */
+}
+
+/* Añadir un efecto de cambio de color en el logo al pasar por encima */
+#nave h1 a:hover {
+    color: #f7c08a; /* Cambia el color del logo en hover */
+}
+
+/* Estilo del icono de búsqueda */
+#nave ul li a i.fa-search {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+/* Botón "BOOK NOW" */
+.primary-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #348016; /* Color del botón */
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #f7c08a;
+}
+
+
+/*fondo principal*/
+#showcase {
+    background: url('image/home1.jpg') no-repeat
+    center center/cover;
+    height: 600px;
+
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/*inicio info*/
+#Home-info {
+    height: 400px;
+}
+
+#Home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('image/Abou.jpg') no-repeat;
+    min-height: 100%;
+}
+
+#Home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#Home.info .infO-content p {
+    padding-bottom: 30px;
+}
+
+/* caracteristicas*/
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+
+}
+
+/*acerca-info*/
+
+#About-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+
+}
+
+#About-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+#About-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+/*testimonio*/
+
+#testimonios {
+    height: 650px;
+    background: url('image/pexels-pixabay-260922.jpg') no-repeat
+    center center/cover;
+    padding-top: 40px;
+    
+}
+
+#testimonios  h2 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+#testimonios .testimonios {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+#testimonios .testimonios img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/*Contacto forma   */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form .form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+   outline: none;
+   border-color: #f7c08a;
+
+}
+
+ /*pie de pagina*/
+.footer {
+	background-color: #455557e3;
+   
+}
+.footer img {
+    width: 300px;  /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+ 
+    margin: 0 10px; /* Espaciado horizontal entre las imágenes */
+}
+
+
+
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+    max-width: 90%; /* Ocupar todo el ancho de la pantalla */
+    margin: 0 auto; /* Asegura que esté centrado */
+    padding-left: 2rem; /* Ajusta según lo que necesites */
+    padding-right: 2rem; /* Ajusta según lo que necesites */
+}
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajusta a 4 columnas iguales */
+    gap: 3rem;
+    justify-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+    line-height: 1.2; /* Añadir esta línea para reducir el interlineado del título */
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+    line-height: 1.4; /* Ajusta el interlineado aquí */
+}
+.footer p {
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente en el pie de página */
+    line-height: 1.4; /* Ajusta el interlineado para el texto en el pie de página */
+}
+
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: var(--dark-color);
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.content p {
+	font-size: 1.4rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: var(--dark-color);
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color: #5c6d77;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.content button:hover {
+	background-color: var(--background-color);
+	color: #c4302b;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+
+	border-top: 1px solid #d2b495;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+
+
+:root {
+	--primary-color: #c7a17a;
+	--background-color: #f9f5f0;
+	--dark-color: #151515;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente del cuerpo a 16px */
+}
+
+h1, h2, h3 {
+    font-size: 2.4rem; /* Ajusta el tamaño de los encabezados según sea necesario */
+}
+
+.footer p {
+    font-size: 1.6rem; /* Aumenta el tamaño de la fuente en el pie de página */
+}
+
+  
+
+/* Estilos para la sección principal .hero */
+.hero {
+    height: 100vh;
+    background-image: url('image/pexels-ian-panelo-15957194.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Apilar elementos en columna */
+    justify-content: space-between; /* Separar los elementos: uno arriba y otro abajo */
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+/* Estilos para el texto de la "Última Oportunidad" */
+.overlay {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    width: 100%; /* Que ocupe el ancho completo */
+}
+
+.last-minute {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Contador */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-box {
+    text-align: center;
+}
+
+.time-box h3 {
+    font-size: 3rem;
+    margin: 5px 0;
+}
+
+.time-box span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Estilos para la reserva .book que estará abajo */
+.book {
+    padding: 40px 0;
+    background: rgba(49, 52, 40, 0.8); /* Fondo semitransparente */
+    color: #fff;
+    width: 100%; /* Que ocupe todo el ancho de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book h1 {
+    font-size: 38px;
+    margin-bottom: 10px; /* Margen inferior para separar del formulario */
+}
+
+.book h1 span {
+    color: #7fc142;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.book input {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    color: #000;
+    border-radius: 5px;
+}
+
+.book input:nth-last-child(1) {
+    background: #7fc142;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*--------habitaciones---------*/
+.rooms {
+    position: relative;
+}
+.rooms .heading h1 {
+    font-size: 100px;
+	font-weight: 500;
+	opacity: 0.1;
+    position: absolute;
+}
+.top {
+	margin-top: 30px;
+  }
+  
+  .mtop {
+	margin-top: 20px;
+  }
+
+  .rooms .heading h2 {
+    font-size: 32px; /* Ajusta el tamaño de la letra según sea necesario */
+    color: #741111; /* Opcional: Cambia el color si lo deseas */
+    font-weight: bold; /* Opcional: Haz el texto más grueso si lo deseas */
+}
+
+  .rooms .text {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    padding: 30px;
+
+  }
+  .text h2 {
+    margin-bottom: 0px; /* Ajusta este valor según sea necesario */
+    color:#00acee;
+    margin-top: -20px; /* Ajusta este valor según sea necesario */
+}
+.rate {
+    margin-top: -20px; /* Ajusta este valor según sea necesario */
+    position: relative; /* Esto permite que los ajustes de posición tengan efecto */
+    top: -5px; /* Desplaza el contenedor hacia arriba */
+}
+
+
+ 
+  
+  .rooms i {
+    font-size: 12px;
+    color: #fbb234;
+    margin: 15px 0;
+    margin-right: 5px;
+  }
+  
+  .rooms p {
+    margin: 20px 0;
+    opacity: 0.7;
+  }
+  
+  .rooms h3 {
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #7fc142;
+  }
+  .rooms h3 span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+  }
+  .owl-carousel1 .owl-nav .owl-prev,
+  .owl-carousel1 .owl-nav .owl-next {
+    position: absolute;
+    top: -15%;
+    height: 50px;
+    width: 50px;
+    background: #afb8a5 !important;
+  }
+  
+  .owl-carousel1 .owl-nav .owl-prev i,
+  .owl-carousel1 .owl-nav .owl-next i {
+    color: #fff;
+  }
+  
+  .owl-carousel1 .owl-nav .owl-prev {
+    left: 90%;
+  }
+  
+  .owl-carousel1 .owl-nav .owl-next {
+    right: 0;
+  }
+  
+
+.text p {
+    color: rgb(32, 43, 3); /* Cambia el color de la letra a negro */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+    font-size: 16px; /* Ajusta el tamaño de la letra según sea necesario */
+    line-height: 2.0; /* Ajusta este valor según sea necesario */
+    
+}
+.button.flex {
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Alinea verticalmente en el centro */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.primary-btn {
+    margin-right: 10px; /* Espacio entre el botón y el precio */
+}
+
+  /*--------habitaciones---------*/
+  /*--------gallery---------*/
+.gallery {
+    position: relative;
+  }
+  
+
+  
+  .gallery .img {
+    position: relative;
+  }
+
+  .gallery .heading h1 {
+    color: #634108; /* Cambia este valor al color que desees (foto)*/
+    font-size: 100px;
+	font-weight: 500;
+	opacity: 0.1;
+    position: absolute;
+} 
+.gallery .heading h2 {
+    color: #a51616; /* Cambia este valor al color que desees */
+    font-size: 32px; /* Ajusta el tamaño de la letra según sea necesario */
+    font-weight: bold; /* Opcional: Haz el texto más grueso si lo deseas */
+}
+
+
+
+  
+  .gallery .img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(107, 129, 92, 0.86);
+    width: 255px;
+    height: 251px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  
+  .gallery span {  /*se cambia de fb.yt*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid white;
+  }
+  .overlay h3 {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  .gallery .items:hover .overlay,
+.gallery .items:hover .img::after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.gallery .owl-nav .owl-prev {
+  left: 85%;
+}
+
+.gallery .owl-nav .owl-next {
+  right: 5%;
+}
+
+.gallery .owl-nav .owl-next,
+.gallery .owl-nav .owl-prev {
+  top: -20%;
+}
+/*--------gallery---------*/
+
+/*--------conctactos---------*/
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FEA116;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-title::before {
+    left: -55px;
+}
+
+.section-title::after {
+    right: -55px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0F172B;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0F172B;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d98913;
+}
+
+.contact-info-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.contact-item h6 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+/* Modificar el tamaño de los campos de texto */
+.form-control {
+    width: 100%; /* Esto asegura que ocupe el 100% del contenedor */
+    padding: 15px; /* Incrementar el padding para un campo más grande */
+    margin-bottom: 15px; /* Ajustar el espaciado inferior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Aumentar el tamaño del texto dentro de los campos */
+    height: 50px; /* Aumentar la altura de los campos de entrada */
+}
+/* Para el textarea (campo de mensaje) puedes definir una altura específica */
+.form-control#message {
+    height: 200px; /* Ajustar el tamaño del área de texto */
+}
+
+/* Opcional: si quieres hacer más grandes las etiquetas también */
+.form-floating label {
+    font-size: 14px; /* Cambiar el tamaño de las etiquetas flotantes */
+}
+
+/* Cambiar la altura del botón de enviar */
+.btn {
+    padding: 15px 20px; /* Hacer más alto el botón */
+}
+
+/* Para el contenedor de contacto */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form {
+    order: 1;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 350px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+/* Estilos para el iframe del mapa */
+.col-md-6 iframe {
+    width: 105%; /* Asegura que el iframe use todo el ancho disponible */
+    height: 400px; /* Ajusta la altura del mapa según sea necesario */
+    border: 0; /* Elimina el borde del iframe */
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.g-3 {
+    gap: 20px;
+}
+
+.contact-title {
+    margin-bottom: 50px;
+}
+
+/* Centrando el título "Contáctenos" y asegurando que todo esté en una línea */
+.contact-title h6,
+.contact-title h1 {
+    display: inline-block; /* Cambia esto a inline-block para que estén en una misma línea */
+    text-align: center;
+    margin: 0 10px; /* Añade margen entre los dos textos para darles espacio */
+}
+
+/* Ajustar la apariencia */
+.contact-title h1 {
+    font-size: 40px;
+	display: block; /* Mantener esto en su propia línea */
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px; /* Añadir espacio entre los dos textos */
+}
+
+.contact-title h6 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact-item h6 {
+    position: relative; /* Posiciona el elemento de manera que los pseudo-elementos se alineen correctamente */
+    display: inline-block; /* Hace que el título ocupe solo el espacio necesario */
+    margin-right: 20px; /* Espacio entre el título y el guion */
+}
+
+.contact-item h6::after {
+    content: ""; /* Crea un pseudo-elemento vacío */
+    display: inline-block; /* Permite que se muestre en línea con el texto */
+    width: 3cm; /* Establece el ancho del guion */
+	
+    height: 3px; /* Altura del guion */
+    background-color: currentColor; /* Hace que el color del guion herede del texto */
+    margin-left: 10px; /* Espacio entre el texto y el guion */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+.contact-item p {
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente del párrafo */
+    display: inline-flex; /* Utiliza flexbox para alinear el ícono y el texto */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    margin: 0; /* Elimina el margen por defecto */
+	margin-bottom: 20px; /* Ajusta este valor para agregar espacio debajo del correo electrónico */
+}
+.contact-item p i {
+    font-size: 1.5rem; /* Aumenta el tamaño del ícono */
+    margin-right: 5px; /* Asegúrate de que haya un poco de espacio entre el ícono y el texto */
+	
+
+} 
+  
+/* Servicio */
+.dropdown-menu {
+    display: none; /* Oculta el menú por defecto */
+    background-color: transparent; /* Fondo completamente transparente */
+    border: none; /* Quita los bordes si están presentes */
+    box-shadow: none; /* Elimina cualquier sombra */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Muestra el menú al pasar el cursor (si se necesita hover) */
+}
+.dropdown-item {
+    color: #fff; /* Cambia a tu color preferido */
+}
+
+/* Cambiar el color de fondo y texto al pasar el cursor */
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo azul al hacer hover */
+    color: #fff; /* Texto blanco al hacer hover */
+}
+
+
+
+.toast-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745; /* Color verde de éxito */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    opacity: 0; /* Oculto por defecto */
+    transform: translateY(-20px); /* Efecto de entrada */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Clase para mostrar el mensaje */
+.toast-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*pago*/
